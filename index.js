@@ -20,7 +20,7 @@ mongoose
   .catch((error) => console.log("Error Connecting to MongoDB", error.message));
 
 app.get("/", async (req, res) => {
-  res.status(200).json({ Task: "Notes Application Website" });
+  res.status(200).json({ Task: "Notes Application web" });
 });
 app.use("/auth", UserRouter);
 app.use("/notes", Verifytoken, NotesRouter);
